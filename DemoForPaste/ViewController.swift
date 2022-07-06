@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 
     // MARK: - Action Functions
     @IBAction func click(_ sender: Any) {
-        (0..<10).forEach { _ in
+        (0..<10000).forEach { _ in
             ServiceAPI.shared.send(URL(string: "https://httpbin.org/post")!, method: .post) { _ in
             }
             ServiceAPI.shared.send(URL(string: "https://httpbin.org/get")!, method: .get) { _ in
